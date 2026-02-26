@@ -1,0 +1,266 @@
+[
+    {
+        "id": 1,
+        "category": "transport",
+        "tip": "Switch to cycling or walking for short trips under 3km.",
+        "impact": "high",
+        "savings_kg_co2_year": 300,
+        "difficulty": "easy",
+        "tags": [
+            "car",
+            "transport",
+            "commute"
+        ]
+    },
+    {
+        "id": 2,
+        "category": "transport",
+        "tip": "Use public transport instead of driving at least 3 days a week.",
+        "impact": "high",
+        "savings_kg_co2_year": 500,
+        "difficulty": "medium",
+        "tags": [
+            "car",
+            "transport",
+            "bus",
+            "train"
+        ]
+    },
+    {
+        "id": 3,
+        "category": "transport",
+        "tip": "Consider switching to an electric vehicle for your next car purchase.",
+        "impact": "high",
+        "savings_kg_co2_year": 900,
+        "difficulty": "hard",
+        "tags": [
+            "car",
+            "electric",
+            "transport"
+        ]
+    },
+    {
+        "id": 4,
+        "category": "transport",
+        "tip": "Carpool with colleagues or neighbours to reduce per-person emissions.",
+        "impact": "medium",
+        "savings_kg_co2_year": 250,
+        "difficulty": "easy",
+        "tags": [
+            "car",
+            "transport",
+            "commute",
+            "carpool"
+        ]
+    },
+    {
+        "id": 5,
+        "category": "transport",
+        "tip": "Reduce one flight per year — take trains for distances under 600km.",
+        "impact": "high",
+        "savings_kg_co2_year": 700,
+        "difficulty": "medium",
+        "tags": [
+            "flight",
+            "transport",
+            "travel"
+        ]
+    },
+    {
+        "id": 6,
+        "category": "energy",
+        "tip": "Switch to a 100% renewable energy tariff with your electricity provider.",
+        "impact": "high",
+        "savings_kg_co2_year": 1.5,
+        "difficulty": "easy",
+        "tags": [
+            "energy",
+            "electricity",
+            "renewable"
+        ]
+    },
+    {
+        "id": 7,
+        "category": "energy",
+        "tip": "Install a smart thermostat and lower heating by just 1°C to save 10% energy.",
+        "impact": "medium",
+        "savings_kg_co2_year": 200,
+        "difficulty": "easy",
+        "tags": [
+            "energy",
+            "heating",
+            "home"
+        ]
+    },
+    {
+        "id": 8,
+        "category": "energy",
+        "tip": "Switch all bulbs to LED lighting — they use 75% less energy.",
+        "impact": "low",
+        "savings_kg_co2_year": 50,
+        "difficulty": "easy",
+        "tags": [
+            "energy",
+            "home",
+            "lighting"
+        ]
+    },
+    {
+        "id": 9,
+        "category": "energy",
+        "tip": "Unplug devices on standby — they account for up to 10% of home electricity.",
+        "impact": "low",
+        "savings_kg_co2_year": 80,
+        "difficulty": "easy",
+        "tags": [
+            "energy",
+            "electricity",
+            "home"
+        ]
+    },
+    {
+        "id": 10,
+        "category": "energy",
+        "tip": "Install solar panels — they can cover 50–60% of home energy needs.",
+        "impact": "high",
+        "savings_kg_co2_year": 1200,
+        "difficulty": "hard",
+        "tags": [
+            "energy",
+            "solar",
+            "renewable",
+            "home"
+        ]
+    },
+    {
+        "id": 11,
+        "category": "diet",
+        "tip": "Adopt a 'Meat-Free Monday' habit — reducing one meat meal per week saves 50kg CO₂/year.",
+        "impact": "medium",
+        "savings_kg_co2_year": 50,
+        "difficulty": "easy",
+        "tags": [
+            "diet",
+            "meat",
+            "food"
+        ]
+    },
+    {
+        "id": 12,
+        "category": "diet",
+        "tip": "Replace beef with chicken, fish, or plant proteins — beef emits 20x more CO₂.",
+        "impact": "high",
+        "savings_kg_co2_year": 400,
+        "difficulty": "medium",
+        "tags": [
+            "diet",
+            "meat",
+            "food"
+        ]
+    },
+    {
+        "id": 13,
+        "category": "diet",
+        "tip": "Buy local and seasonal produce to cut food transport emissions.",
+        "impact": "medium",
+        "savings_kg_co2_year": 100,
+        "difficulty": "easy",
+        "tags": [
+            "diet",
+            "food",
+            "local",
+            "shopping"
+        ]
+    },
+    {
+        "id": 14,
+        "category": "diet",
+        "tip": "Reduce food waste by meal planning — wasted food accounts for 8% of global emissions.",
+        "impact": "medium",
+        "savings_kg_co2_year": 120,
+        "difficulty": "easy",
+        "tags": [
+            "diet",
+            "food",
+            "waste"
+        ]
+    },
+    {
+        "id": 15,
+        "category": "diet",
+        "tip": "Try a plant-based diet for one month — veganism cuts food emissions by 60%.",
+        "impact": "high",
+        "savings_kg_co2_year": 600,
+        "difficulty": "hard",
+        "tags": [
+            "diet",
+            "vegan",
+            "food",
+            "plant-based"
+        ]
+    },
+    {
+        "id": 16,
+        "category": "shopping",
+        "tip": "Buy second-hand clothing — the fashion industry produces 10% of global emissions.",
+        "impact": "medium",
+        "savings_kg_co2_year": 150,
+        "difficulty": "easy",
+        "tags": [
+            "shopping",
+            "fashion",
+            "clothing"
+        ]
+    },
+    {
+        "id": 17,
+        "category": "shopping",
+        "tip": "Repair electronics instead of replacing them — manufacturing a new phone emits 70kg CO₂.",
+        "impact": "medium",
+        "savings_kg_co2_year": 100,
+        "difficulty": "medium",
+        "tags": [
+            "shopping",
+            "electronics",
+            "repair"
+        ]
+    },
+    {
+        "id": 18,
+        "category": "shopping",
+        "tip": "Choose products with minimal or recyclable packaging.",
+        "impact": "low",
+        "savings_kg_co2_year": 30,
+        "difficulty": "easy",
+        "tags": [
+            "shopping",
+            "packaging",
+            "waste"
+        ]
+    },
+    {
+        "id": 19,
+        "category": "waste",
+        "tip": "Start composting food scraps — it diverts waste from landfill and creates fertiliser.",
+        "impact": "medium",
+        "savings_kg_co2_year": 100,
+        "difficulty": "easy",
+        "tags": [
+            "waste",
+            "composting",
+            "food"
+        ]
+    },
+    {
+        "id": 20,
+        "category": "waste",
+        "tip": "Recycle properly — contaminated recycling often ends up in landfill.",
+        "impact": "low",
+        "savings_kg_co2_year": 40,
+        "difficulty": "easy",
+        "tags": [
+            "waste",
+            "recycling"
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+{
+  "transport": {
+    "car_petrol_km": 0.21,
+    "car_diesel_km": 0.17,
+    "car_electric_km": 0.05,
+    "bus_km": 0.089,
+    "train_km": 0.041,
+    "flight_short_km": 0.255,
+    "flight_long_km": 0.195,
+    "motorcycle_km": 0.114,
+    "bicycle_km": 0.0,
+    "walking_km": 0.0
+  },
+  "energy": {
+    "electricity_kwh": 0.233,
+    "natural_gas_kwh": 0.203,
+    "heating_oil_litre": 2.52,
+    "lpg_litre": 1.51,
+    "solar_kwh": 0.045,
+    "wind_kwh": 0.011
+  },
+  "diet": {
+    "meat_heavy_daily_kg_co2": 7.19,
+    "meat_medium_daily_kg_co2": 5.63,
+    "pescatarian_daily_kg_co2": 3.91,
+    "vegetarian_daily_kg_co2": 3.81,
+    "vegan_daily_kg_co2": 2.89
+  },
+  "shopping": {
+    "clothing_item": 10.0,
+    "electronics_device": 70.0,
+    "furniture_item": 80.0,
+    "online_order_parcel": 0.5
+  },
+  "waste": {
+    "landfill_kg": 0.5,
+    "recycled_kg": 0.02,
+    "composted_kg": 0.01
+  },
+  "global_average_annual_kg": 4700,
+  "uk_average_annual_kg": 5500,
+  "us_average_annual_kg": 14000,
+  "india_average_annual_kg": 1800,
+  "target_annual_kg": 2000
+}
