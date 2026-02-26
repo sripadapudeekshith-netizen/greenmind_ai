@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenMind AI - Energy Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-container">
+        <div class="splash-logo">🌍</div>
+        <div class="splash-text">GreenMind AI</div>
+        <p class="splash-subtext">Initializing neural networks...</p>
+    </div>
+
+    <!-- Main Content (Hidden initially) -->
+    <div id="main-app" class="app-container hidden">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="https://img.shields.io/badge/GreenMind-AI-10b981?style=for-the-badge&logo=leaf" alt="GreenMind AI Logo">
+            </div>
+            
+            <div class="control-panel">
+                <h3>🎛️ Control Panel</h3>
+                <div class="input-form">
+                    <p class="section-title">Environmental Sensors</p>
+                    
+                    <div class="input-group">
+                        <label for="temp-slider">🌡️ Temperature: <span id="temp-val">25.0</span>°C</label>
+                        <input type="range" id="temp-slider" min="0" max="60" step="0.5" value="25.0">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="humidity-slider">💧 Humidity: <span id="humidity-val">55</span>%</label>
+                        <input type="range" id="humidity-slider" min="0" max="100" step="1" value="55">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="hour-slider">🕐 Time (Hour): <span id="hour-val">12</span></label>
+                        <input type="range" id="hour-slider" min="0" max="23" step="1" value="12">
+                    </div>
+
+                    <button id="predict-btn" class="primary-btn">⚡ Run Energy Prediction</button>
+                    <button id="reset-btn" class="secondary-btn">🔄 Reset to Defaults</button>
+                </div>
+            </div>
+
+            <div class="system-status">
+                <h4>📡 System Status</h4>
+                <div id="status-card" class="status-card offline">
+                    <p id="status-text"><strong>Backend Offline</strong></p>
+                    <p id="latency-text">Unreachable</p>
+                </div>
+                <p class="endpoint-info">Endpoint: <code>/api</code></p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header class="glass-header">
+                <h1 class="main-title">GreenMind Intelligence</h1>
+                <p class="sub-title">Predictive Energy Consumption Modeling for a Sustainable Future</p>
+            </header>
+
+            <!-- Results Section (Hidden until prediction) -->
+            <div id="results-section" class="results-container hidden">
+                <div class="metrics-row">
+                    <div class="metric-card">
+                        <p class="metric-label">Current Temp</p>
+                        <p id="metric-temp" class="metric-value">-- °C</p>
+                    </div>
+                    <div class="metric-card">
+                        <p class="metric-label">Current Humidity</p>
+                        <p id="metric-humidity" class="metric-value">-- %</p>
+                    </div>
+                    <div class="metric-card">
+                        <p class="metric-label">Model Confidence</p>
+                        <p id="metric-confidence" class="metric-value">-- %</p>
+                        <span class="delta-badge">Optimal</span>
+                    </div>
+                </div>
+
+                <div class="viz-row">
+                    <div class="result-display">
+                        <div class="result-box">
+                            <p class="result-hint">⚡ Predicted Hourly Load</p>
+                            <div class="result-value-container">
+                                <span id="prediction-value" class="result-value">0.00</span>
+                                <span class="result-unit">kWh</span>
+                            </div>
+                            <div class="result-footer">
+                                Target Optimal Load: <strong>< 4.00 kWh</strong>
+                            </div>
+                        </div>
+                        
+                        <div id="advice-container" class="advice-box">
+                            <!-- Advice dynamic content -->
+                        </div>
+                    </div>
+
+                    <div class="chart-container">
+                        <h3>📊 Contextual Impact Analysis</h3>
+                        <p class="chart-caption">How your predicted usage compares to benchmark standards.</p>
+                        <div class="canvas-wrapper">
+                            <canvas id="impactChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empty State -->
+            <div id="empty-state" class="empty-state">
+                <p class="empty-icon">👈</p>
+                <div class="info-banner">
+                    Please set your environmental sensors in the sidebar and click <strong>Run Energy Prediction</strong> to display insights.
+                </div>
+                <div class="placeholder-grid">
+                    <div class="metric-card placeholder">
+                        <p class="metric-label">Current Temp</p>
+                        <p class="metric-value">-- °C</p>
+                    </div>
+                    <div class="metric-card placeholder">
+                        <p class="metric-label">Current Humidity</p>
+                        <p class="metric-value">-- %</p>
+                    </div>
+                    <div class="metric-card placeholder">
+                        <p class="metric-label">Model Confidence</p>
+                        <p class="metric-value">-- %</p>
+                    </div>
+                </div>
+                <div class="action-placeholder">
+                    <p class="large-icon">📉</p>
+                    <h3>Waiting for data input...</h3>
+                    <p>Awaiting telemetry from the sidebar to run predictive algorithms.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
